@@ -8,7 +8,7 @@ const initializeDB = () => {
     console.log("Connected to the SQLite database");
   });
 
-  /*  const createUserTable =
+  const createUserTable =
     "create table users (id integer not null primary key, firstName VARCHAR(255) not null, lastName VARCHAR(255) not null, favourite_movies VARCHAR(255) not null);";
 
   db.run(createUserTable, err => {
@@ -44,7 +44,7 @@ const initializeDB = () => {
         } else console.log("login table filled successfully");
       });
     }
-  });*/
+  });
 
   return db;
 };
